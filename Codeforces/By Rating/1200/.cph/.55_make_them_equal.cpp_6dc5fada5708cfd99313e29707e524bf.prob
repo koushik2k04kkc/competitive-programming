@@ -1,0 +1,1 @@
+{"name":"Local: 55_make_them_equal","url":"d:\\Competitive Programming\\1200\\55_make_them_equal.cpp","tests":[{"id":1772902695528,"input":"3\n4 a\naaaa\n4 a\nbaaa\n4 b\nbzyx","output":"0\n1\n2\n2 \n2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Competitive Programming\\1200\\55_make_them_equal.cpp","group":"local","local":true}

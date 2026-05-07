@@ -1,0 +1,163 @@
+<!-- Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+
+
+Example 1:
+
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+Example 2:
+
+Input: x = 2.10000, n = 3
+Output: 9.26100
+Example 3:
+
+Input: x = 2.00000, n = -2
+Output: 0.25000
+Explanation: 2-2 = 1/22 = 1/4 = 0.25
+
+
+Constraints:
+
+-100.0 < x < 100.0 -231 <=n <=231-1 n is an integer. Either x is not zero or n> 0.
+    -104 <= xn <=104 solution : 
+
+    solution :
+
+    double myPow(double x, int n) {
+         if(n < 0) {
+            x = 1 / x;
+        } 
+        long long num = labs(n);
+        double pow = 1;
+        while(num){
+            if(num & 1) {
+                pow *= x;
+            }
+            x *= x;
+            num >>= 1;
+        }
+        return pow;
+    } -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pow Function Problem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .keyword {
+            color: #66d9ef;
+        }
+
+        .type {
+            color: #f92672;
+        }
+
+        .number {
+            color: #ae81ff;
+        }
+
+        .function {
+            color: #a6e22e;
+        }
+
+        .comment {
+            color: #75715e;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section">
+        <h1>Problem: Implement pow(x, n)</h1>
+        <p>Implement <strong>pow(x, n)</strong>, which calculates <em>x</em> raised to the power <em>n</em> (i.e.,
+            x<sup>n</sup>).</p>
+    </div>
+
+    <div class="section">
+        <h2>Examples</h2>
+        <p><strong>Example 1:</strong></p>
+        <p>Input: x = 2.00000, n = 10</p>
+        <p>Output: 1024.00000</p>
+
+        <p><strong>Example 2:</strong></p>
+        <p>Input: x = 2.10000, n = 3</p>
+        <p>Output: 9.26100</p>
+
+        <p><strong>Example 3:</strong></p>
+        <p>Input: x = 2.00000, n = -2</p>
+        <p>Output: 0.25000</p>
+        <p>Explanation: 2<sup>-2</sup> = 1 / 2<sup>2</sup> = 1 / 4 = 0.25</p>
+    </div>
+
+    <div class="section">
+        <h2>Constraints</h2>
+        <ul>
+            <li>-100.0 &lt; x &lt; 100.0</li>
+            <li>-2<sup>31</sup> ≤ n ≤ 2<sup>31</sup> - 1</li>
+            <li>n is an integer</li>
+            <li>Either x is not zero or n &gt; 0</li>
+            <li>-10<sup>4</sup> ≤ x<sup>n</sup> ≤ 10<sup>4</sup></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>C++ Solution</h2>
+        <pre>
+<span class="type">double</span> <span class="function">myPow</span>(<span class="type">double</span> x, <span class="type">int</span> n) {
+    <span class="comment">// যদি n negative হয়, x কে reciprocal করতে হবে</span>
+    <span class="keyword">if</span>(n &lt; 0) {
+        x = 1 / x;
+    }
+
+    <span class="type">long long</span> num = labs(n); <span class="comment">// n কে positive long long এ convert করা</span>
+    <span class="type">double</span> pow = 1;
+
+    <span class="keyword">while</span>(num) {
+        <span class="keyword">if</span>(num &amp; 1) {
+            pow *= x; <span class="comment">// যদি current bit 1 হয়, multiply করতে হবে</span>
+        }
+        x *= x; <span class="comment">// x কে square করা (bit shift জন্য)</span>
+        num &gt;&gt;= 1; <span class="comment">// n কে right shift করা (divide by 2)</span>
+    }
+    <span class="keyword">return</span> pow;
+}
+    </pre>
+    </div>
+
+</body>
+
+</html>
