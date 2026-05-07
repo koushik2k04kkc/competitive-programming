@@ -1,22 +1,56 @@
-# competitive-programming
-My solutions to competitive programming and DSA problems
-# Competitive Programming Solutions
-This repository contains my solutions to various competitive programming and DSA problems.
+# 🚀 Competitive Programming Solutions
 
-## Platforms
-- Codeforces
-- LeetCode
-- CSES
-- AtCoder
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Codeforces-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-LeetCode-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-CSES-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-AtCoder-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-CodeChef-brown?style=for-the-badge" />
+</p>
 
-## Language
-- C++
+<p align="center">
+  A collection of my solved problems from different competitive programming platforms 💻✨
+</p>
 
-## Purpose
-- Improve problem-solving skills
-- Practice data structures and algorithms
-- Track my learning progress
+---
 
-## Profiles
-- Codeforces: https://codeforces.com/profile/koushik2k04kkc
-- GitHub: https://github.com/koushik2k04kkc
+## 📖 About This Repository
+
+This repository contains my solutions to various **Competitive Programming** and **DSA** problems from different online judges.  
+I use this repository to:
+
+- practice problem solving regularly 🧠
+- improve my data structures and algorithms skills 📚
+- keep my solutions organized neatly 🗂️
+- track my learning journey and progress over time 📈
+
+---
+
+## 🧩 Platforms Covered
+
+- **Codeforces**
+- **LeetCode**
+- **CSES**
+- **AtCoder**
+- **CodeChef**
+
+---
+
+## 💻 Language Used
+
+- **C++**
+
+---
+
+## 📂 Repository Structure
+
+```bash
+Competitive Programming/
+│
+├── AtCoder/
+├── CodeChef/
+├── Codeforces/
+├── CSES/
+├── LeetCode/
+└── README.md
