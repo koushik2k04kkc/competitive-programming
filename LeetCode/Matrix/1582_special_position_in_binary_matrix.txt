@@ -54,3 +54,21 @@ public:
         return ans;
     }
 };
+// Time complexity:O(m × n)
+
+// Space complexity:O(m + n)
+# /*
+# Because of these two arrays 🙂
+
+# vector<int> row(m, 0);
+# vector<int> col(n, 0);
+# row stores count for each row → size = m
+# col stores count for each column → size = n
+
+# So extra memory used is:
+
+# m for row
+# n for col
+
+# Total extra space = O(m + n)
+# */
