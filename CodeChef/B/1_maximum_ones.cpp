@@ -44,7 +44,7 @@ void solve()
             k--;
         }
     }
-    cout << cnt nl;
+    cout << cnt << "\n";
 }
 
 int main()
